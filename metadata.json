@@ -1,0 +1,6 @@
+{
+  "name": "Banco de Preguntas ITT",
+  "description": "Aplicación interactiva de banco de preguntas y flashcards para personal directivo y docentes de Institutos Tecnológicos Técnicos (ITT).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

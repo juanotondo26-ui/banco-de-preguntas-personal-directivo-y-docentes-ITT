@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "Fira Code", monospace;
+
+  --color-brand-dark: #0a2540;
+  --color-brand-blue: #0d3b66;
+  --color-brand-cobalt: #1d4ed8;
+  --color-brand-interactive: #1976d2;
+  --color-brand-accent: #f59e0b;
+  --color-brand-gold: #d97706;
+}
+
+/* Custom classes for 3D card flipping */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Animations and tweaks */
+@keyframes gold-flash {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 16px 4px rgba(245, 158, 11, 0.8);
+  }
+}
+
+.gold-flash-effect {
+  animation: gold-flash 2s infinite ease-in-out;
+}
